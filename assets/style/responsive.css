@@ -1,0 +1,1830 @@
+@media only screen and (min-width:1151px) {
+    .navbar nav>ul {
+        display: flex;
+        gap: 30px;
+        margin-bottom: -45px;
+    }
+
+    .navbar ul>li>a {
+        font-family: DM Sans;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #212529;
+    }
+   
+    .navbar nav>ul>li {
+        position: relative;
+        padding-bottom: 45px;
+    }
+
+    li.menu-item-has-children .down-arrow {
+        display: inline-block;
+        margin-left: 5px;
+        /* margin-top: -6px; */
+    }
+    li.menu-item-has-children .down-arrow i {
+        font-size: 14px;
+        color: #212529;
+        transition: all 0.3s ease-in-out;
+    }
+
+    li.menu-item-has-children {
+        display: flex;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+    }
+    li.menu-item-has-children:hover .down-arrow i{
+        transform: rotate(180deg);
+
+    }
+    .navbar nav>ul>li .sub-menu {
+        position: absolute;
+        top: 62px;
+        background-color: #76C2BD;
+        width: 260px;
+        /* padding: 20px; */
+        transform: translateY(-20px);
+        opacity: 0;
+        visibility: hidden;
+        transition: all .3s ease-in-out;
+    }
+
+    .navbar nav>ul>li:hover .sub-menu {
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .navbar nav>ul>li .sub-menu>li>a {
+        color: #fff;
+        /* padding: 10px 0; */
+        display: block;
+    }
+
+    .navbar nav>ul>li .sub-menu>li {
+        border-bottom: 1px solid #fff;
+        transition: all 0.3s ease-in-out;
+        padding: 20px;
+    }
+    .navbar nav>ul>li .sub-menu>li:hover{
+        background-color: #488a85;
+    }
+
+    .navbar nav>ul>li .sub-menu>li:last-child {
+        border-bottom: none;
+    }
+
+    .navbar nav>ul>li .sub-menu>li:first-child a {
+        padding-top: 0;
+    }
+
+    .navbar nav>ul>li .sub-menu>li:last-child a {
+        padding-bottom: 0;
+    }
+
+    .main-header .coll-60 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1300px) {
+    .home-testi-slider .item {
+        width: 85%;
+    }
+
+    .home-testi-slider .owl-nav {
+        width: 85%;
+    }
+    .fo-he-container {
+        padding: 0 40px;
+    }
+    .navbar nav>ul {
+        gap: 28px;
+    }
+
+}
+
+
+@media screen and (max-width: 1150px) {
+    body {
+        overflow-x: hidden;
+    }
+    #menu-drop-menu .menu-item-has-children ul.sub-menu li {
+    padding: 0;
+/*     border-bottom: 1px solid #00000017; */
+}
+    #hamburger-6.is-active {
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition-delay: 0.6s;
+        -o-transition-delay: 0.6s;
+        transition-delay: 0.6s;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    #hamburger-6.is-active .line:nth-child(2) {
+        width: 0px;
+    }
+
+    #hamburger-6.is-active .line:nth-child(1),
+    #hamburger-6.is-active .line:nth-child(3) {
+        -webkit-transition-delay: 0.3s;
+        -o-transition-delay: 0.3s;
+        transition-delay: 0.3s;
+    }
+
+    #hamburger-6.is-active .line:nth-child(1) {
+        -webkit-transform: translateY(13px);
+        -ms-transform: translateY(13px);
+        -o-transform: translateY(13px);
+        transform: translateY(11px);
+    }
+
+    #hamburger-6.is-active .line:nth-child(3) {
+        -webkit-transform: translateY(-13px) rotate(90deg);
+        -ms-transform: translateY(-13px) rotate(90deg);
+        -o-transform: translateY(-13px) rotate(90deg);
+        transform: translateY(-9px) rotate(90deg);
+    }
+
+    .row .three {
+        padding: 80px 30px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        text-align: center;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 4px;
+        background-color: #212529;
+        display: block;
+        margin: 6px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .three col {
+        position: relative;
+    }
+
+    .hamburger.is-active {
+        z-index: 999999999 !important;
+        position: relative;
+    }
+
+    .hamburger.is-active span {
+        background: #212529;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
+
+    .menusflex {
+        position: fixed;
+        top: 150px;
+        height: 83vh;
+        width: 100vw;
+        background-color: #fff;
+        transition: 0.5s ease-in-out;
+        z-index: 999999;
+        left: -103%;
+        overflow: scroll;
+    }
+
+    .menusflex.active {
+        left: 0;
+    }
+
+    .menusflex .navbar nav>ul li a {
+        color: #000;
+        padding: 10px 0;
+        font-size: 18px;
+    }
+    .menusflex .navbar nav>ul li ul.sub-menu a {
+        color: #000;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+    .menusflex .navbar nav>ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+        gap: 0;
+        padding: 40px 20px 60px;
+    }
+
+    .menusflex .navbar nav>ul>li {
+        position: relative;
+        padding: 26px 0;
+        width: 100%;
+        border-bottom: 1px solid #E9ECEF;
+        /* display: flex; */
+        justify-content: space-between;
+    }
+
+    .menusflex .navbar nav>ul>li:last-child {
+        border-bottom: 0;
+    }
+
+    .three.col {
+        position: relative;
+        display: flex;
+        top: 25%;
+        left: 5px;
+        width: 20%;
+    }
+
+    .mobile-slide ul.sub-menu {
+        width: 100%;
+        background: #F1F9F8;
+        padding: 10px 20px 20px;
+        display: none;
+    }
+
+    .mobile-slide ul.sub-menu li {
+        padding: 10px 0;
+        border-bottom: 1px solid #00000017;
+    }
+
+    .mobile-slide ul.sub-menu li:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+
+   
+    .mobile-slide ul.sub-menu.sub-menu-active {
+        display: block;
+    }
+
+    .mobile-slide span.down-arrow {
+        position: absolute;
+        right: 0;
+        top: 25px;
+    }
+	
+	 /* .mobile-slide ul.sub-menu.sub-menu-active{
+        display: block;
+    } */
+		#menu-drop-menu, #menu-drop-menu-japapn {
+    position: relative;
+    width: 100px;
+}
+	#menu-drop-menu>li img, #menu-drop-menu-japapn>li img {
+    margin-right: 5px !important;
+}
+	#menu-drop-menu>li#menu-item-112, #menu-drop-menu-japapn>li#menu-item-144 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+	#menu-drop-menu .menu-item-has-children span.down-arrow, #menu-drop-menu-japapn .menu-item-has-children span.down-arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+	 .menu-item-has-children ul.sub-menu {
+        width: 100%;
+        background: #F1F9F8;
+        padding: 10px 20px 20px;
+        display: none;
+    }
+
+    .menu-item-has-children ul.sub-menu li {
+        padding: 10px 0;
+        border-bottom: 1px solid #00000017;
+    }
+
+    .menu-item-has-children ul.sub-menu li:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;
+    }
+	#menu-drop-menu-japapn .menu-item-has-children ul.sub-menu li:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+    padding-top: 0;
+}
+	 .menu-item-has-children ul.sub-menu.sub-menu-active {
+        display: block;
+    }
+	
+	.menu-item-has-children span.down-arrow {
+        position: absolute;
+        right: 0;
+        top: 25px;
+    }
+
+    .main-header {
+        position: relative;
+    }
+
+    .header-logo {
+        justify-content: center;
+    }
+
+
+    .hamberger-footer a {
+        color: var(--para);
+        font-size: 14px;
+    }
+
+    .hamberger-footer {
+        padding: 24px 0 100px;
+        background: #F1F9F8;
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        /* margin-top: 10%; */
+    }
+    /* .navbar {
+        position: relative;
+        height: inherit;
+    } */
+    .hamberger-footer p {
+        padding-top: 20px;
+        font-size: 12px;
+        color: rgb(0 0 0 / 50%);
+    }
+
+    /* body.active {
+        height: auto;
+        overflow: hidden;
+    } */
+}
+
+
+@media screen and (max-width: 991px) {
+	.hongo-law-office .flex-area {
+    padding-inline: 50px;
+}
+    section.help-protect {
+        padding: 80px 0;
+    }
+
+    section.helping {
+        background-color: #F1F9F8;
+        padding: 80px 0;
+    }
+
+    .ower-quote {
+        background-color: #76C2BD;
+        margin: 80px auto 0 auto;
+        padding: 65px 93px;
+        text-align: center;
+    }
+
+    .serving-client {
+        margin-top: 80px;
+    }
+
+    section.meet-yuka {
+        background-color: #FCF0EF;
+        padding: 80px 0;
+    }
+
+    .yuka-name {
+        margin-bottom: 80px;
+    }
+
+    section.home-testimonilas {
+        padding: 80px 0;
+    }
+
+    .home-testi-heading p {
+        margin-bottom: 80px;
+    }
+
+    section.consultation {
+        padding: 80px 0 0px;
+        background: #FCF0EF;
+    }
+
+    .consultation .flex-area {
+        padding-bottom: 80px;
+    }
+
+    section.hongo-law-office {
+        padding: 80px 0 80px;
+    }
+
+    .serving-client-content p:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    section.help-protect p:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .ahead-content p {
+        margin-top: 20px;
+        color: var(--para);
+    }
+
+    .ahead-img img {
+        height: 335px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .meet-yuka-content p {
+        margin-top: 25px;
+        color: var(--para);
+    }
+
+    /* ABOUT PAGE */
+
+    section.about-meet-yuka {
+        padding: 80px 0;
+    }
+
+    .about-yuka-name {
+        margin-bottom: 80px;
+    }
+
+    .about-meet-yuka .coll-55 {
+        width: 50%;
+        flex: 0 0 50%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+    }
+
+    section.legal-service-sec {
+        padding: 80px 0;
+    }
+
+    .office-help-client h2 {
+        padding: 80px 0 80px;
+        text-align: center;
+    }
+
+    section.hongo-law-office-contact {
+        padding: 80px 0 80px;
+        background: #FCF0EF;
+    }
+
+    section.custom-content {
+        padding: 80px 0;
+    }
+
+    section.serving-us {
+        padding: 80px 0;
+    }
+
+    .contact-form-sec .container {
+        padding-inline: 100px;
+    }
+
+    section.contact-form-sec {
+        background: #FCF0EF;
+        padding: 0px 0 80px;
+    }
+
+    section.testimonials-sec {
+        padding: 80px 0 80px;
+    }
+
+    .testimonials-sec .container>p {
+        margin-bottom: 80px;
+        color: var(--para);
+        padding-inline: 0px;
+        text-align: center;
+    }
+
+    section.probate-sec {
+        padding: 80px 0;
+    }
+
+    section.revocable-trust {
+        background: #F1F9F8;
+        padding: 80px 0;
+    }
+
+    section.estate-faq {
+        padding: 80px 0;
+    }
+
+    section.probate-option {
+        padding: 80px 0;
+        background: #F1F9F8;
+    }
+
+    section.probate-faq {
+        padding: 80px 0;
+    }
+
+    section.Taxpayer-Identification-sec {
+        padding: 80px 0;
+    }
+
+    section.certifying-acceptance {
+        background: #F1F9F8;
+        padding: 80px 0;
+    }
+
+    section.non-residence {
+        padding: 80px 0 80px;
+    }
+
+    section.file-sec {
+        padding: 80px 0;
+        background: #F1F9F8;
+    }
+
+    section.gross-estate {
+        padding: 80px 0;
+    }
+
+    section.qualified-conversation {
+        padding: 80px 0;
+        background: #FCF0EF;
+    }
+
+    section.estate-relief {
+        padding: 80px 0;
+    }
+
+    section.schedule-b {
+        background: #F1F9F8;
+        padding: 80px 0;
+    }
+    .fo-he-container {
+        padding: 0 15px;
+    }
+	.yuka-img-box img {
+    height: 535px;
+}
+	.home-yuka-img-box img {
+    height: 430px;
+}
+}
+
+
+@media screen and (max-width: 850px) {
+    .marquee {
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 25px;
+    }
+
+    .marquee .header-tb {
+        display: flex;
+        animation: marquee 35s linear infinite;
+        width: 125%;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .header-tb .coll-50 {
+        width: 50%;
+        flex: 0 0 50%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+    }
+
+
+    .top-footer .coll-30 {
+        flex: 0 0 50%;
+        width: 50%;
+    }
+
+    .top-footer .coll-40 {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .bottom-footer .coll-30 {
+        width: 50%;
+        flex: 0 0 50%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+    }
+
+    .yuka-name.marquee {
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        width: 120%;
+        height: 90px;
+        animation: marquee 20s linear infinite;
+    }
+
+    .about-yuka-name.marquee {
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        width: 120%;
+        height: 90px;
+        animation: marquee 20s linear infinite;
+    }
+
+    .probate-img img {
+        height: 490px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .revocable-sec .coll-50 {
+        padding: 12px;
+        width: 100%;
+        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+    }
+	.law-honor-imag img {
+    width: 100%;
+    max-height: 200px;
+    max-width: 250px;
+    height: 100%;
+    object-fit: cover;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero-banner-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero-banner-heading {
+        padding-bottom: 30px;
+    }
+
+    section.help-protect {
+        padding: 60px 0;
+    }
+
+    .help-protect .flex-area {
+        flex-direction: column;
+    }
+
+    .help-protect .coll-30 {
+        width: 100%;
+        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+    }
+
+    .help-protect .coll-70 {
+        width: 100%;
+        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+    }
+
+    section.help-protect p {
+        padding-left: 0px;
+        color: var(--para);
+    }
+
+    .help-protect h3 {
+        margin-bottom: 25px;
+    }
+
+    section.helping {
+        background-color: #F1F9F8;
+        padding: 60px 0;
+    }
+
+    .ower-quote {
+        background-color: #76C2BD;
+        margin: 60px auto 0 auto;
+        padding: 65px 93px;
+        text-align: center;
+    }
+
+    .serving-client {
+        margin-top: 60px;
+    }
+
+    .serving-client .flex-area {
+        flex-direction: column-reverse;
+    }
+
+    .serving-client .coll-55 {
+        width: 100%;
+        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+    }
+
+    .serving-client .coll-40 {
+        width: 70%;
+        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+        margin-top: 30px;
+    }
+
+    section.meet-yuka {
+        background-color: #FCF0EF;
+        padding: 60px 0;
+    }
+
+    .yuka-name {
+        margin-bottom: 60px;
+    }
+
+    section.home-testimonilas {
+        padding: 60px 0;
+    }
+
+    .home-testi-heading p {
+        margin-bottom: 60px;
+    }
+
+    .home-testi-btn a {
+        margin-top: 60px;
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+    section.consultation {
+        padding: 60px 0 0px;
+        background: #FCF0EF;
+    }
+
+    .consultation .flex-area {
+        padding-bottom: 60px;
+        flex-direction: column;
+    }
+
+    .consultation .coll-45,
+    .consultation .coll-50 {
+        width: 100%;
+        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+    }
+
+    section.hongo-law-office {
+        padding: 60px 0 60px;
+    }
+
+    .hongo-law-heading h2 {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    .hongo-law-office .flex-area {
+        padding-inline: 0px;
+        margin-inline: -12px;
+    }
+
+    footer .top-footer {
+        padding: 60px 0;
+    }
+
+    .yuka-name.marquee {
+        white-space: nowrap;
+        overflow: hidden;
+        position: relative;
+        width: 120%;
+        height: 90px;
+        animation: marquee 20s linear infinite;
+    }
+
+    .sub-banner p {
+        color: var(--para);
+        margin: 48px 0 0;
+    }
+
+    .sub-banner {
+        padding: 60px 0 20px 0;
+        background-color: #F1F9F8;
+    }
+
+    section.about-meet-yuka {
+        padding: 60px 0;
+    }
+
+    section.legal-service-sec {
+        padding: 60px 0;
+    }
+
+    .office-help-client h2 {
+        padding: 60px 0 60px;
+        text-align: center;
+    }
+
+    section.hongo-law-office-contact {
+        padding: 60px 0 60px;
+        background: #FCF0EF;
+    }
+
+    .hongo-law-office-contact .flex-area {
+        padding-inline: 0;
+        margin-inline: -12px;
+    }
+
+    .about-yuka-name {
+        margin-bottom: 60px;
+    }
+
+    section.custom-content {
+        padding: 60px 0;
+    }
+
+    .custom-content ul {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    section.serving-us {
+        padding: 60px 0;
+    }
+
+    .serving-us .flex-area {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .serving-us .coll-45 {
+        width: 70%;
+        flex: 0 0 70%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 70%;
+    }
+
+    .serving-us .coll-50 {
+        width: 100%;
+        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+    }
+
+    .serving-us-img img {
+        height: 750px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .contact-form-sec .container {
+        padding-inline: 15px;
+    }
+
+    section.contact-form-sec {
+        background: #FCF0EF;
+        padding: 0px 0 60px;
+    }
+
+    section.testimonials-sec {
+        padding: 60px 0 60px;
+    }
+
+    .testimonials-sec .coll-50 {
+        width: 100%;
+        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+    }
+
+    section.probate-sec {
+        padding: 60px 0;
+    }
+
+    .probate-sec .coll-50,
+    .probate-sec .coll-45 {
+        width: 100%;
+        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+    }
+
+    section.revocable-trust {
+        background: #F1F9F8;
+        padding: 60px 0;
+    }
+
+    section.estate-faq {
+        padding: 60px 0;
+    }
+
+    .probate-option-heading {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    section.probate-option {
+        padding: 60px 0;
+        background: #F1F9F8;
+    }
+
+    .probate-option .coll-30,
+    .probate-option .coll-70 {
+        width: 100%;
+        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+    }
+
+    .probate-option .coll-30 {
+        margin-bottom: 30px;
+    }
+
+    section.probate-faq {
+        padding: 60px 0;
+    }
+
+    section.Taxpayer-Identification-sec {
+        padding: 60px 0;
+    }
+
+    section.certifying-acceptance {
+        background: #F1F9F8;
+        padding: 60px 0;
+    }
+
+    .legal-img img {
+        height: 300px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    section.non-residence {
+        padding: 60px 0 60px;
+    }
+
+    .non-residence .container>p {
+        margin-bottom: 60px;
+    }
+
+    section.non-residenc-note {
+        padding: 60px 0;
+    }
+
+    section.file-sec {
+        padding: 60px 0;
+    }
+
+    section.gross-estate {
+        padding: 60px 0;
+    }
+
+    .gross-estate-text p {
+        margin-inline: 5%;
+    }
+
+    .entire-gross {
+        padding: 60px 40px;
+        margin-top: 60px;
+    }
+
+    .determine-assets {
+        background: #F8F9FA;
+        padding: 60px 40px;
+        margin-top: 60px;
+    }
+
+    .determine-main-content {
+        margin-top: 60px;
+    }
+
+    section.qualified-conversation {
+        padding: 60px 0;
+        background: #FCF0EF;
+    }
+
+    section.estate-relief {
+        padding: 60px 0;
+    }
+
+    .estate-relief-contnt:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
+    section.schedule-b {
+        padding: 60px 0;
+    }
+
+    .schedule-b-main-contnt {
+        margin-top: 60px;
+    }
+
+    .entire-gross .coll-45,
+    .entire-gross .coll-50 {
+        width: 100%;
+        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+    }
+
+    .determine-image img {
+        height: 195px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .schedule-b-image img {
+        height: 210px;
+        object-fit: cover;
+        width: 100%;
+    }
+	.yuka-img-box img {
+    height: 440px;
+}
+    
+}
+
+@media screen and (max-width: 590px) {
+.marquee {
+        width: 140%;
+    }
+	.desktop-text{
+		display:none;
+	}
+	.mobile-text{
+	display:block;
+		margin-bottom: 20px;
+}
+	.serving-client-img {
+    margin-top: 20px;
+}
+	.meet-yuka .flex-area.align-item-center {
+    flex-direction: column-reverse;
+}
+	.marquee .header-tb {
+    width: 170%;
+}
+    section.help-protect {
+        padding: 30px 0;
+    }
+
+    section.helping {
+        background-color: #F1F9F8;
+        padding: 30px 0;
+    }
+
+    .helping .flex-area {
+        flex-direction: column-reverse;
+    }
+
+    .coll-50,
+    .coll-45,
+    .coll-55,
+    .coll-60,
+    .coll-65,
+    .coll-70,
+    .coll-80,
+    .coll-40,
+    .coll-25,
+    .coll-30,
+    .coll-35 {
+        width: 100%;
+        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+    }
+
+    .ahead-img img {
+        height: 445px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .ahead-img {
+        margin-bottom: 30px;
+    }
+
+    .ower-quote {
+        background-color: #76C2BD;
+        margin: 30px auto 0 auto;
+        padding: 40px 40px;
+        text-align: center;
+    }
+
+    .serving-client {
+        margin-top: 30px;
+    }
+
+    .serving-client-heading {
+        max-width: 588px;
+        margin-bottom: 30px;
+    }
+
+    .serving-client .coll-40 {
+        width: 100%;
+        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    section.meet-yuka {
+        background-color: #FCF0EF;
+        padding: 30px 0;
+    }
+
+    .yuka-name {
+        margin-bottom: 30px;
+    }
+
+    section.home-testimonilas {
+        padding: 30px 0;
+    }
+
+    .home-testi-heading p {
+        margin-bottom: 30px;
+        padding: 30px 0px 0;
+    }
+
+    .home-testi-slider .item {
+        background: var(--light-blue);
+        padding: 35px 40px;
+/*         height: auto; */
+        width: 88%;
+        margin: auto;
+    }
+
+    .home-testi-btn a {
+        margin-top: 30px;
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+    section.consultation {
+        padding: 30px 0 0px;
+        background: #FCF0EF;
+    }
+
+    section.hongo-law-office {
+        padding: 30px 0 30px;
+    }
+
+    .hongo-law-heading h2 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .office-box {
+        padding: 40px 40px;
+    }
+
+    .hongo-law-office .flex-area {
+        row-gap: 20px;
+    }
+
+/*     .top-footer .coll-30 {
+        flex: 0 0 100%;
+        width: 100%;
+    } */
+	.top-footer .coll-30:first-child {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+.top-footer .coll-40 {
+    width: 40%;
+    flex: 0 0 40%;
+}
+    .coll-40 ul {
+        column-count: 1;
+    }
+
+    .bottom-footer {
+        flex-direction: column-reverse;
+        align-items: center;
+        row-gap: 15px;
+    }
+
+    .menusflex .navbar nav>ul li a {
+        color: #000;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+    .hamberger-footer .coll-40 {
+        width: 70%;
+        flex: 0 0 70%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 70%;
+    }
+
+    .header-logo a img {
+        height: 40px;
+        object-fit: contain;
+    }
+
+    .coll-20 {
+        width: 45%;
+        flex: 0 0 12%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+    }
+
+    .header-logo a {
+        height: 40px;
+    }
+
+    .common-btn {
+        padding: 16px 24px;
+        display: inline-block;
+        font-size: 14px;
+    }
+
+    .home-testi-slider .owl-nav {
+        width: 80%;
+		top: 46%;
+    }
+
+    .footer-menu {
+        margin-top: 30px;
+    }
+
+    .footer-menu a {
+        color: var(--para);
+        font-size: 12px;
+    }
+    .footer-menu li {
+        padding: 8px 0;
+    }
+    .footer-menu h6 {
+        margin-bottom: 12px;
+        font-size: 16px;
+    }
+
+    footer .top-footer {
+        padding: 30px 0;
+		justify-content: space-between;
+    }
+
+    .bottom-footer .coll-30 {
+        width: 90%;
+        flex: 0 0 90%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 90%;
+    }
+
+    .bottom-footer p {
+        color: var(--para);
+        font-size: 12px;
+        opacity: 0.5;
+    }
+
+    .bottom-footer a {
+        font-size: 12px;
+        color: var(--para);
+    }
+
+    .yuka-name.marquee {
+        height: 60px;
+        animation: marquee 20s linear infinite;
+    }
+
+    .menusflex {
+        position: fixed;
+        top: 140px;
+        height: 84vh;
+        width: 100vw;
+        background-color: #fff;
+        transition: 0.5s ease-in-out;
+        z-index: 999999;
+        left: -103%;
+        overflow: scroll;
+    }
+
+    section.about-meet-yuka {
+        padding: 30px 0;
+    }
+
+    .about-yuka-name {
+        margin-bottom: 30px;
+    }
+
+    .about-meet-yuka .coll-55 {
+        width: 100%;
+        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+    }
+
+    .meet-yuka-content {
+        margin-bottom: 30px;
+		padding-right: 0px;
+    }
+
+    section.legal-service-sec {
+        padding: 30px 0;
+    }
+
+    .legal-img {
+        margin-bottom: 30px;
+    }
+
+    .office-help-client h2 {
+        padding: 30px 0 30px;
+        text-align: left;
+    }
+
+    section.hongo-law-office-contact {
+        padding: 30px 0 30px;
+        background: #FCF0EF;
+    }
+
+    .hongo-law-office-contact .flex-area {
+        gap: 20px;
+    }
+
+    section.custom-content {
+        padding: 30px 0;
+    }
+
+    .custom-content p {
+        margin-bottom: 20px;
+    }
+
+    .custom-content ul {
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .custom-content h3 {
+        margin-bottom: 15px;
+        padding-top: 10px;
+    }
+
+    section.serving-us {
+        padding: 30px 0;
+    }
+
+    .serving-us-heading {
+        margin-bottom: 30px;
+    }
+
+    .serving-us-content p:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .serving-us-img {
+        margin-top: 30px;
+    }
+
+    .serving-us .coll-45 {
+        width: 100%;
+        flex: 0 0 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+    }
+
+    section.contact-form-sec {
+        background: #FCF0EF;
+        padding: 0px 0 30px;
+    }
+
+    .input-grp2 .input-container {
+        flex: 1 0 100px;
+    }
+
+    .input-grp2 {
+        flex-direction: column;
+    }
+
+    .chkbox {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .checkbox-group {
+        margin-bottom: 20px;
+    }
+
+    section.testimonials-sec {
+        padding: 30px 0 30px;
+    }
+
+    section.probate-sec {
+        padding: 30px 0;
+    }
+
+    .probate-heading {
+        margin-bottom: 30px;
+    }
+
+    .Taxpayer-Identification-content p:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .Taxpayer-Identification-content {
+        margin-top: 30px;
+    }
+
+    section.revocable-trust {
+        background: #F1F9F8;
+        padding: 30px 0;
+    }
+
+    .revocable-content {
+        padding: 40px 40px;
+        background: #fff;
+    }
+
+    .revocable-content p {
+        margin-top: 20px;
+        color: var(--para);
+    }
+
+    .revocable-img img {
+        display: block;
+        width: 100%;
+        height: 665px;
+        object-fit: cover;
+    }
+
+    .durable-power {
+        padding: 40px 40px;
+        background: #fff;
+        margin-top: 24px;
+    }
+
+    .durable-power-content p:not(:last-child) {
+        margin-bottom: 20px;
+        color: var(--para);
+    }
+
+    section.estate-faq {
+        padding: 30px 0;
+    }
+
+    .probate-option-heading {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    #accordion1 .apps_panel,
+    #accordion2 .apps_panel {
+        /* margin: 5px; */
+        padding: 30px 20px 30px 20px;
+    }
+
+    #accordion1 .apps_panel .apps_panel_header,
+    #accordion2 .apps_panel .apps_panel_header {
+        font-size: 20px;
+        padding-right: 30px;
+        line-height: 36px;
+    }
+
+    .durable-power-img img {
+        display: block;
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+
+    section.probate-option {
+        padding: 30px 0;
+        background: #F1F9F8;
+    }
+
+    .probate-option-content p:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    section.probate-faq {
+        padding: 30px 0;
+    }
+
+    section.Taxpayer-Identification-sec {
+        padding: 30px 0;
+    }
+
+    .Taxpayer-Identification-heading {
+        margin-bottom: 30px;
+    }
+
+    .Taxpayer-Identification-img img {
+        height: 490px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    section.certifying-acceptance {
+        background: #F1F9F8;
+        padding: 30px 0;
+    }
+
+    .certifying-acceptance .legal-img {
+        margin-bottom: 0px;
+        margin-top: 30px;
+    }
+
+    section.non-residence {
+        padding: 30px 0 30px;
+    }
+
+   
+
+    section.non-residenc-note {
+        padding: 30px 0;
+    }
+
+    .non-residenc-note span.small-heading {
+        margin-bottom: 30px;
+    }
+
+    section.file-sec {
+        padding: 30px 0;
+    }
+
+    .file-sec .file-info {
+        background: #76C2BD;
+        padding: 25px 25px;
+        margin-inline: 12px;
+    }
+
+    .file-sec .file-info p:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .file-sec .flex-area {
+        gap: 20px;
+    }
+
+    section.gross-estate {
+        padding: 30px 0;
+    }
+
+    .gross-estate-text p {
+        margin-top: 30px;
+    }
+
+    .entire-gross {
+        padding: 25px 25px;
+        margin-top: 30px;
+    }
+
+    .entire-gross-text p {
+        margin: 15px 0 30px;
+        color: var(--para);
+    }
+
+    .entire-gross .entire-gross-content li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .determine-assets {
+        background: #F8F9FA;
+        padding: 25px 25px;
+        margin-top: 30px;
+    }
+
+    .determine-image img {
+        height: 270px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .determine-main-content {
+        margin-top: 30px;
+    }
+
+    .determine-main-content li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    section.qualified-conversation {
+        padding: 30px 0;
+        background: #FCF0EF;
+    }
+
+    .qualified-conversation h2 {
+        margin-bottom: 30px;
+    }
+
+    .conversation-content li {
+        margin-bottom: 20px;
+        margin-left: 15px;
+    }
+
+    section.estate-relief {
+        padding: 30px 0;
+    }
+
+    .estate-relief-contnt h2 {
+        margin-bottom: 10px;
+    }
+
+    .estate-relief-contnt p:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .estate-relief-contnt:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    section.schedule-b {
+        padding: 30px 0;
+    }
+
+    .schedule-b-contnt p {
+        margin-top: 10px;
+    }
+
+    .schedule-b-main-contnt {
+        margin-top: 30px;
+    }
+
+    .schedule-b-main-contnt p:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .schedule-b-main-contnt li {
+        margin-bottom: 20px;
+    }
+    .schedule-b-main-contnt h3 {
+        margin-bottom: 10px;
+    }
+    .in-main-contnt-card-line-6 {
+        background: #fff;
+        padding: 25px;
+    }
+    .in-main-contnt-card-line-6 h4 {
+        margin-bottom: 10px;
+    }
+    .main-contnt-card {
+        gap: 20px;
+    }
+
+    .determine-content p {
+        margin-top: 10px;
+    }
+
+    .determine-content {
+        margin-top: 30px;
+    }
+
+    .determine-main-content p {
+        margin-bottom: 30px;
+    }
+    .non-residence .coll-30 h4 {
+        margin-bottom: 10px;
+    }
+    .determine-main-content h4 {
+        margin-bottom: 10px;
+    }
+    .file-sec .file-info h2 {
+        margin-bottom: 20px;
+    }
+
+    .determine-main-content h3 {
+        margin-bottom: 10px;
+    }
+    .consultation-content {
+        margin-top: 25px;
+    }
+   
+    .input-container label {
+        margin-bottom: 10px;
+        margin-left: 10px;
+        display: block;
+    }
+    .input-container {
+        /* padding: 16px; */
+        margin-bottom: 20px;
+    }
+    .non-residence .flex-area {
+        padding: 25px 0 25px;
+        border-top: 1px solid rgb(0 0 0 / 10%);
+    }
+    .non-residence .container>p {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .office-box li {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin: 30px 0;
+    }
+    .law-honor-imag img {
+        width: 100%;
+        max-height: 150px;
+    max-width: 185px;
+        height: 100%;
+        object-fit: cover;
+    }
+    section.law-honors .container {
+        padding: 40px 0;
+    }
+    .law-honor-images {
+        row-gap: 20px;
+    }
+		.home-yuka-img-box img {
+    height: 530px;
+}
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    #accordion1 .apps_panel .apps_panel_content,
+    #accordion2 .apps_panel .apps_panel_content {
+        font-size: 16px;
+        color: #4a4a4a;
+        line-height: 25px;
+    }
+
+    .probate-img img {
+        height: 380px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .revocable-img img {
+        display: block;
+        width: 100%;
+        height: 485px;
+        object-fit: cover;
+    }
+
+    .revocable-content {
+        padding: 25px 25px;
+        background: #fff;
+    }
+
+    .durable-power-img img {
+        display: block;
+        width: 100%;
+        height: 410px;
+        object-fit: cover;
+    }
+
+    .Taxpayer-Identification-img img {
+        height: 400px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .entire-gross-image img {
+        height: 440px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .determine-image img {
+        height: 240px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .conversation-image img {
+        height: 385px;
+        object-fit: cover;
+        width: 100%;
+    }
+    main#main {
+        padding-top: 118px;
+    }
+    .header-top-bar {
+        padding: 8px 0;
+    }
+    .main-header {
+        padding: 20px 0;
+    }
+    .menusflex {
+        top: 118px;
+        height: 86vh;
+    }
+	    .home-yuka-img-box img {
+        height: 460px;
+    }
+}
